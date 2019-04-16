@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Chiharu ishiiについて</title>
+  <link rel="icon" href="favicon.ico">
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <meta name="description" content="山田太郎について。">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">
+            HOME
+          </a>
+        </li>
+        <li class="current">
+          <a href="about.html">
+            ABOUT
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about">
+    <img src="img/taro.png" width="140" height="140" alt="太郎のアイコン" class="icon">
+    <h1>Chiharu Ishii</h1>
+    <p>山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。山田太郎の紹介です。</p>
+  </section>
+
+  <footer>
+    <ul>
+      <li>
+        <a href="mailto:taguchi@gmail.com" target="_blank">
+          <img src="img/mail.png" width="20" height="20" alt="メール送信">
+        </a>
+      </li>
+      <li>
+        <a href="https://dotinstall.com" target="_blank">
+          <img src="img/blog.png" width="20" height="20" alt="ブログサイトへ">
+        </a>
+      </li>
+      <li>
+        <a href="https://dotinstall.com" target="_blank">
+          <img src="img/photos.png" width="20" height="20" alt="写真サイトへ">
+        </a>
+      </li>
+    </ul>
+    <p>(c) Chiharu Ishii</p>
+  </footer>
+  <div id="back-to-top" style="position:fixed;right:5px;bottom:5px"><a href="#"><img src="img/back-to.png"></a></div>
+  
+  <script>
+  $(function() {
+
+      $('#back-to-top').hide();
+
+
+      $(window).scroll(function() {
+          $('#pos').text($(this).scrollTop());
+          if ($(this).scrollTop() > 60) {
+              $('#back-to-top').fadeIn();
+          } else {
+              $('#back-to-top').fadeOut();
+          }
+      });
+
+
+      $('#back-to-top a').click(function() {
+          $('html,body').animate({
+              scrollTop:0
+          }, 500);
+          return false;
+      });
+  });
+  </script>
+</body>
+</html>
