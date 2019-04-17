@@ -1,1 +1,0 @@
-# study initgit add README.mdgit commit -m first commitgit remote add origin https://github.com/chiharuishii/study.gitgit push -u origin master
